@@ -8,15 +8,14 @@ import Profile from './props/profile';
 import Counter from './state/counter';
 import UserData from './axios/users';
 import MountingPhase from './lifeCycle/mountingPhase';
+import UpdatingPhase from './lifeCycle/updatingPhase';
+import Parent from './lifeCycle/unmountingPhase';
 
 
 function App() {
   return (
-    
 
-<MountingPhase/>
-
-
+<Parent/>
 
   );
 }
