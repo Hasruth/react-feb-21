@@ -7,13 +7,14 @@ import AccordianComponent from './accordian';
 import Profile from './props/profile';
 import Counter from './state/counter';
 import UserData from './axios/users';
+import MountingPhase from './lifeCycle/mountingPhase';
 
 
 function App() {
   return (
     
 
-<UserData/>
+<MountingPhase/>
 
 
 
