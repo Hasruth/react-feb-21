@@ -11,12 +11,15 @@ import MountingPhase from './lifeCycle/mountingPhase';
 import UpdatingPhase from './lifeCycle/updatingPhase';
 import Parent from './lifeCycle/unmountingPhase';
 import ParentEle from './pureComponents/parentEle';
+import UseStateExample1 from './hooks/useStateex1';
+import UseStateExample2 from './hooks/useStateex2';
+import UseStateExample3 from './hooks/useStateex3';
 
 
 function App() {
   return (
 
-<ParentEle/>
+<UseStateExample3/>
 
   );
 }
