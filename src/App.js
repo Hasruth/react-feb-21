@@ -10,12 +10,13 @@ import UserData from './axios/users';
 import MountingPhase from './lifeCycle/mountingPhase';
 import UpdatingPhase from './lifeCycle/updatingPhase';
 import Parent from './lifeCycle/unmountingPhase';
+import ParentEle from './pureComponents/parentEle';
 
 
 function App() {
   return (
 
-<Parent/>
+<ParentEle/>
 
   );
 }
