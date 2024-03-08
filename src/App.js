@@ -14,12 +14,14 @@ import ParentEle from './pureComponents/parentEle';
 import UseStateExample1 from './hooks/useStateex1';
 import UseStateExample2 from './hooks/useStateex2';
 import UseStateExample3 from './hooks/useStateex3';
+import UnControlledComponent from './Forms/unControlled';
+import Controlled from './Forms/controlled';
 
 
 function App() {
   return (
 
-<UseStateExample3/>
+<Controlled/>
 
   );
 }

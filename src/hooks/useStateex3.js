@@ -4,11 +4,12 @@ import { useState } from "react"
 
 
 const UseStateExample3 = () => {
-    const [fruits, setFruits] = useState(["banana", "apple", "watermelon"])
+    const [fruits, setFruits] = useState([])
 
 
     const addfruit = () => {
-        const newList = [...fruits, "newfruits"]
+        var  a=prompt("enter the fruit")
+        const newList = [...fruits, a]
         setFruits(newList)
     }
 
@@ -19,7 +20,7 @@ const UseStateExample3 = () => {
 
     return (
         <>
-            <h1>TO DO LIST</h1>
+            <h1>Add Fruits List</h1>
             <button onClick={addfruit}>Add fruits</button>
             <button onClick={removefruit}>Remove fruit</button>
             <ol>
