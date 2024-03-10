@@ -16,13 +16,17 @@ import UseStateExample2 from './hooks/useStateex2';
 import UseStateExample3 from './hooks/useStateex3';
 import UnControlledComponent from './Forms/unControlled';
 import Controlled from './Forms/controlled';
+import UseEffectEx1 from './hooks/useEffectHook/useEffectEx1';
+import UseEffectEx2 from './hooks/useEffectHook/useEffectEx2';
+import UseEffectEx3 from './hooks/useEffectHook/useEffectEx3';
+import UseEffectEx4 from './hooks/useEffectHook/useEffectEx4';
+
 
 
 function App() {
   return (
 
-<Controlled/>
-
+    <UseEffectEx4/>
   );
 }
 

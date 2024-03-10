@@ -26,9 +26,13 @@ const Controlled = () => {
         //console.log("User Typing")
     }
 
+    const submitHandler = (event) => {
+        event.preventDefault()
+    }
+
     return (
         <>
-            <form >
+            <form onSubmit={submitHandler}>
                 <div className="form-group">
                     <label htmlFor="txt">Enter your name:</label>
                     <input type="text"
