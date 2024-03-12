@@ -2,6 +2,7 @@ import axios from "axios"
 import React, { useEffect, useState } from "react"
 import { DNA } from "react-loader-spinner"
 import { Card } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 
 
@@ -27,13 +28,13 @@ const UseEffectEx4 = () => {
 
     return (
         <>
-            <center><h1>Products</h1>
+            <center><h1 style={{backgroundColor:"lightcoral",margin:"0px"}}>Products</h1>
                 {
                     products.length > 0 ?
-                        <div style={{ display: "flex", flexWrap: "wrap" }}>{
+                        <div style={{ display: "flex", flexWrap: "wrap", backgroundColor: "lightgreen" }}>{
                             products.map((e) => {
                                 return (
-                                    <Card style={{ width: '18rem', display: "inline-block",margin:"2px"}} >
+                                    <Card style={{ width: '300px',height:"auto", display: "inline-block",margin:"30px 10px 10px 70px", backgroundColor: "gray" }} >
                                         <Card.Img variant="top" src={e.image} style={{ width: 100, height: 200 }} />
                                         <Card.Body>
                                             <Card.Title>{e.category}</Card.Title>
@@ -41,6 +42,7 @@ const UseEffectEx4 = () => {
                                                 {e.title}
                                             </Card.Text>
                                         </Card.Body>
+                                        <button><Link to={`/${e.category}/${e.id}`}>More Info</Link></button>
                                     </Card>
                                 )
                             })

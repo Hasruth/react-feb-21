@@ -1,0 +1,14 @@
+
+
+.link{
+    text-decoration: none;
+}
+
+ul>li{
+    margin: 10px 115px;
+    padding: 0px 10px;
+}
+
+li:hover{
+    background-color: rgb(154, 232, 235);
+}

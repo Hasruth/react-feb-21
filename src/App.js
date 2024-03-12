@@ -20,14 +20,18 @@ import UseEffectEx1 from './hooks/useEffectHook/useEffectEx1';
 import UseEffectEx2 from './hooks/useEffectHook/useEffectEx2';
 import UseEffectEx3 from './hooks/useEffectHook/useEffectEx3';
 import UseEffectEx4 from './hooks/useEffectHook/useEffectEx4';
+import NavigationStack from './navigation/navigation';
 
 
 
 function App() {
   return (
 
-    <UseEffectEx4/>
+    <NavigationStack/>
   );
 }
 
 export default App;
+
+
+
