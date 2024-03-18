@@ -5,12 +5,11 @@ import "./navbar.css"
 
 const NavbarComponent = () => {
     return (
-        <nav className="navbar navbar-expand-sm bg-light navbar-light">
+        <nav className="navbar navbar-expand-sm bg-light navbar-light" >
             <div className="container-fluid">
-                <ul className="navbar-nav" style={{ backgroundColor: "red", width: "100%" }}>
+                <ul className="navbar-nav" style={{ backgroundColor: "red", width: "100%",display:"flex",flexWrap:"wrap"}}>
                     <li className="nav-item">
                         <Link to={"/"} className="link" > HOME </Link>
-
                     </li>
                     <li className="nav-item" >
                         <Link to={"/about"} className="link">About Us</Link>
@@ -21,7 +20,6 @@ const NavbarComponent = () => {
                     <li className="nav-item">
                         <Link to={"/settings"} className="link">Settings</Link>
                     </li>
-
                 </ul>
             </div>
         </nav>

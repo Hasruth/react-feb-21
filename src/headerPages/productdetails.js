@@ -41,30 +41,33 @@ const ProductDetails = () => {
 
 
     return (
-        <div>
-            {
-                Object.keys(productdetail).length === 0 ?
-                    <center>
-                        <DNA/>
-                    </center>
-
-                    :
-                    <div style={{ border: "5px solid", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", padding: "10px" }}>
+        <>
+            <NavbarComponent />
+            <div>
+                {
+                    Object.keys(productdetail).length === 0 ?
                         <center>
-                            <h1>{productdetail.category}</h1>
-                            <hr></hr>
-                            <img src={productdetail.image} style={{ width: "200px", height: "200px", margin: "auto", display: "block" }} />
-                            <h2>{productdetail.title}</h2>
-                            <hr></hr>
-                            <p>{productdetail.description}</p>
-                            <h1 style={{ textAlign: "center" }}>₹{productdetail.price}</h1>
+                            <DNA />
                         </center>
-                        <button onClick={returnhome}>Go To Home</button>
-                    </div>
 
-            }
+                        :
+                        <div style={{ border: "5px solid", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", padding: "10px" }}>
+                            <center>
+                                <h1>{productdetail.category}</h1>
+                                <hr></hr>
+                                <img src={productdetail.image} style={{ width: "200px", height: "200px", margin: "auto", display: "block" }} />
+                                <h2>{productdetail.title}</h2>
+                                <hr></hr>
+                                <p>{productdetail.description}</p>
+                                <h1 style={{ textAlign: "center" }}>₹{productdetail.price}</h1>
+                            </center>
+                            <button onClick={returnhome}>Go To Home</button>
+                        </div>
 
-        </div>
+                }
+
+            </div>
+        </>
     )
 }
 
